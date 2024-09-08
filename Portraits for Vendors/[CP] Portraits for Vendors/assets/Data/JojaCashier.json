@@ -1,0 +1,97 @@
+{
+	"Changes":[
+		{
+			"LogName": "Joja Cashier",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Joja", "Owners", "AnyOrNone" ],
+			"Entries": {
+				"Portrait": "Mods/DolphINaF.VendorPortraits/JojaCashier_{{Clerk}}",
+				"Dialogues":  [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"Dialogue": null,
+						"RandomDialogue": [
+							"{{i18n:JojaCashier1}}",
+							"{{i18n:JojaCashier2}}",
+							"{{i18n:JojaCashier3}}",
+							"{{i18n:JojaCashier4}}",
+						],
+					}
+				],
+			},	
+		},
+// VENDOR ROTATION
+		{  
+			"LogName": "Joja Clerk Sprite Shift",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Sprites/JojaCashier_{{Clerk}}.png",
+			"ToArea": { "X": 352, "Y": 944, "Width": 32, "Height": 32 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains=LemurKat.JulietHouse.NPC": false			
+			}
+		},
+// Juliet and Jessie Support
+		{
+			"LogName": "Joja Cashiers",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Joja", "Owners", "AnyOrNone" ],
+			"Entries": {
+				"Portrait": null,
+				"Id": "Any",
+				"Name": "Any",
+			},
+			"When": {"HasMod |contains=LemurKat.JulietHouse.NPC": true}
+		},
+        {
+            "LogName": "JojaMart Shop Tile Property",
+			"Action": "EditMap",
+            "Target": "Maps/JojaMart",
+            "MapTiles": [
+                {
+                    "Position": { "X": 10, "Y": 24},
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "OpenShop Joja none 0900 2300 9 25 1 1"
+                    }
+                },
+				{
+                    "Position": { "X": 10, "Y": 25},
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "OpenShop Joja none 0900 2300 9 25 1 1"
+                    }
+                }
+            ],
+			"When": {"HasMod |contains=LemurKat.JulietHouse.NPC": true}			
+        },		
+		{
+			"LogName": "Shane's JojaMart Uniform",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Shane", "Appearance", "WorkOutfit" ],
+			"Entries": {"Portrait": "Mods/DolphINaF.VendorPortraits/JojaCashier_Shane"},
+			"Priority": "Early",
+		},
+		{
+			"LogName": "Jessie's JojaMart Uniform",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Jessie", "Appearance"],
+			"Entries":{
+				"DolphINaF.VendorPortraits_Jessie_JojaMart":
+				{
+					"Id": "DolphINaF.VendorPortraits_Jessie_JojaMart",
+					"Condition": "LOCATION_NAME Target JojaMart",
+					"Portrait": "Mods/DolphINaF.VendorPortraits/JojaCashier_Jessie",
+					"Precedence": 100
+				},
+			},
+			"When": {"HasMod |contains=LemurKat.JulietHouse.NPC": true}		
+		},		
+	],
+}

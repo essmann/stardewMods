@@ -1,0 +1,22 @@
+{
+	"Changes":[
+		{
+			"LogName": "Volcano Dwarf",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "VolcanoShop", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Mods/DolphINaF.VendorPortraits/VolcanoDwarf_Default"},
+		},
+// Dwarf Portrait Replacement Support
+		{
+			"LogName": "Dwarf Portrait Replacement",
+			"Action": "EditImage",
+			"Target": "Mods/DolphINaF.VendorPortraits/VolcanoDwarf_Default",
+			"FromFile": "assets/Portraits/LavenderSkelly/{{TargetWithoutPath}}.png",
+			"When": {
+				"HasMod": "LavenderSkelly.DwarfPortraitReplacement",
+				"LavenderSkellyDwarf": true,
+			}
+		},
+	],
+}

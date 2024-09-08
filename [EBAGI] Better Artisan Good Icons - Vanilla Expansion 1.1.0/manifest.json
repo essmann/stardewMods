@@ -1,0 +1,13 @@
+{
+    "Name": "[EBAGI] Even Better Artisan Good Icons - Vanilla Expansion",
+    "Author": "Shreedle",
+    "Version": "1.1.0",
+    "Description": "Adds Even Better Artisan Good Icons for the SV 1.4 and 1.5 updates.",
+    "UniqueID": "Shreedle.bagivanexp",
+    "MinimumApiVersion": "4.0.0",
+    "UpdateKeys": ["Nexus:15737"],
+    "ContentPackFor":
+    {
+        "UniqueID": "haze1nuts.evenbetterartisangoodicons"
+    },
+}

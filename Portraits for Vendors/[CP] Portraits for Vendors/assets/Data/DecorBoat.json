@@ -1,0 +1,42 @@
+{
+	"Changes":[
+		{
+			"LogName": "Decoration Seller",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Festival_NightMarket_DecorationBoat", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Mods/DolphINaF.VendorPortraits/DecorBoat_Default"},
+		},
+// Night Market Cat Boat Support
+		{
+			"LogName": "Night Market Cat",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Festival_NightMarket_DecorationBoat", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Mods/DolphINaF.VendorPortraits/DecorBoat_Cat"},
+			"When": {"HasMod": "MouseyPounds.NightMarketCatBoat"}
+		},	
+		{
+			"LogName": "Cat Hat",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Festival_NightMarket_DecorationBoat", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Mods/DolphINaF.VendorPortraits/DecorBoat_CatNoHat"},
+			"When": {
+				"HasMod": "MouseyPounds.NightMarketCatBoat",
+				"CatHat": false
+			}
+		},	
+		{
+			"LogName": "Cat Pipe",
+			"Action": "EditImage",
+			"Target": "Mods/DolphINaF.VendorPortraits/DecorBoat_Cat, Mods/DolphINaF.VendorPortraits/DecorBoat_CatNoHat",
+			"FromFile": "assets/Portraits/DecorBoat_CatPipe.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "MouseyPounds.NightMarketCatBoat",
+				"CatPipe": true
+			}
+		},	
+	],
+}

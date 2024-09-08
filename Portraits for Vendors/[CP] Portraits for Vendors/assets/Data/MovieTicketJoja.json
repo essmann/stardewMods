@@ -1,0 +1,11 @@
+{
+	"Changes":[
+		{
+			"LogName": "Box Office in Joja Theater",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "BoxOffice", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Mods/DolphINaF.VendorPortraits/MovieTicketJoja_{{Ticket}}"},
+		},
+	],
+}

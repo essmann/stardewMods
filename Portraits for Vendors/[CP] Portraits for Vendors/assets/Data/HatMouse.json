@@ -1,0 +1,34 @@
+{
+	"Changes":[
+		{
+			"LogName": "Hat Mouse",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "HatMouse", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Mods/DolphINaF.VendorPortraits/HatMouse_{{MouseFriends}}"},
+			"When": {"HasValue:{{MouseFriends}}": true}
+		},
+		{
+			"LogName": "Mouse Friends Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["HatMouse", "Owners", "AnyOrNone", "Dialogues", "Default"],
+			"Entries": { "Dialogue": "{{i18n:HatMouse.{{MouseFriends}}}}" },
+			"When": {"MouseFriends |contains=Default": false}
+		},
+		
+// Wildflour's Hat Mouse Support		
+		{
+			"LogName": "Wildflour's Hat Mouse",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "HatMouse", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/FFFHatmouse"},
+			"When": {
+				"WildflourMouse": true,
+				"MouseFriends": "Default",
+				"HasMod": "UNA.FF.CP"
+			}
+		},	
+	],
+}

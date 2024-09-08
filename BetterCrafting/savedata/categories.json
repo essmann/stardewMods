@@ -1,0 +1,234 @@
+{
+  "9141402853313177766": {
+    "Cooking": null,
+    "Crafting": [
+      {
+        "Id": "decoration",
+        "Name": "Decoration",
+        "I18nKey": "category.decoration",
+        "UseRules": true,
+        "DynamicRules": [
+          {
+            "Id": "Floors",
+            "Inverted": false
+          },
+          {
+            "Id": "Fences",
+            "Inverted": false
+          },
+          {
+            "Id": "Furniture",
+            "Inverted": false
+          },
+          {
+            "Id": "Light",
+            "Inverted": false
+          },
+          {
+            "Id": "ContextTag",
+            "Inverted": false,
+            "Input": "sign_item"
+          }
+        ],
+        "Icon": {
+          "Type": "Item",
+          "RecipeName": "Wood Fence",
+          "Scale": 1.0,
+          "Frames": 1
+        },
+        "Recipes": [
+          "Tub o' Flowers",
+          "Wicked Statue",
+          "Flute Block",
+          "Drum Block",
+          "Text Sign",
+          "Garden Pot",
+          "Scarecrow",
+          "Deluxe Scarecrow",
+          "Statue Of Blessings",
+          "Statue Of The Dwarf King",
+          "Mini-Jukebox"
+        ],
+        "UnwantedRecipes": null,
+        "IncludeInMisc": false
+      },
+      {
+        "Id": "fertilizer_seeds",
+        "Name": "Fertilizer and Seeds",
+        "I18nKey": "category.fertilizer_seeds",
+        "UseRules": true,
+        "DynamicRules": [
+          {
+            "Id": "Category",
+            "Inverted": false,
+            "Input": "-74"
+          },
+          {
+            "Id": "Category",
+            "Inverted": false,
+            "Input": "-19"
+          }
+        ],
+        "Icon": {
+          "Type": "Item",
+          "RecipeName": "Basic Fertilizer",
+          "Scale": 1.0,
+          "Frames": 1
+        },
+        "Recipes": [
+          "Grass Starter",
+          "Blue Grass Starter"
+        ],
+        "UnwantedRecipes": null,
+        "IncludeInMisc": false
+      },
+      {
+        "Id": "consumables",
+        "Name": "Consumables",
+        "I18nKey": "category.consumables",
+        "UseRules": true,
+        "DynamicRules": [
+          {
+            "Id": "Edible",
+            "Inverted": false
+          },
+          {
+            "Id": "ContextTag",
+            "Inverted": false,
+            "Input": "totem_item"
+          }
+        ],
+        "Icon": {
+          "Type": "Item",
+          "RecipeName": "Field Snack",
+          "Scale": 1.0,
+          "Frames": 1
+        },
+        "Recipes": [
+          "Monster Musk",
+          "Fairy Dust",
+          "Cookout Kit",
+          "Tent Kit"
+        ],
+        "UnwantedRecipes": null,
+        "IncludeInMisc": false
+      },
+      {
+        "Id": "fishing",
+        "Name": "Fishing",
+        "I18nKey": "category.fishing",
+        "UseRules": true,
+        "DynamicRules": [
+          {
+            "Id": "Category",
+            "Inverted": false,
+            "Input": "-21"
+          },
+          {
+            "Id": "Category",
+            "Inverted": false,
+            "Input": "-22"
+          }
+        ],
+        "Icon": {
+          "Type": "Item",
+          "RecipeName": "Barbed Hook",
+          "Scale": 1.0,
+          "Frames": 1
+        },
+        "Recipes": [
+          "Crab Pot"
+        ],
+        "UnwantedRecipes": null,
+        "IncludeInMisc": false
+      },
+      {
+        "Id": "machinery",
+        "Name": "Machinery",
+        "I18nKey": "category.machinery",
+        "UseRules": true,
+        "DynamicRules": [
+          {
+            "Id": "Machine",
+            "Inverted": false
+          },
+          {
+            "Id": "Sprinkler",
+            "Inverted": false
+          },
+          {
+            "Id": "Storage",
+            "Inverted": false
+          }
+        ],
+        "Icon": {
+          "Type": "Item",
+          "RecipeName": "Chest",
+          "Scale": 1.0,
+          "Frames": 1
+        },
+        "Recipes": [],
+        "UnwantedRecipes": null,
+        "IncludeInMisc": false
+      },
+      {
+        "Id": "combat_rings",
+        "Name": "Combat and Rings",
+        "I18nKey": "category.combat_rings",
+        "UseRules": true,
+        "DynamicRules": [
+          {
+            "Id": "ContextTag",
+            "Inverted": false,
+            "Input": "bomb_item"
+          },
+          {
+            "Id": "Category",
+            "Inverted": false,
+            "Input": "-96"
+          },
+          {
+            "Id": "Category",
+            "Inverted": false,
+            "Input": "-29"
+          }
+        ],
+        "Icon": {
+          "Type": "Item",
+          "RecipeName": "Sturdy Ring",
+          "Scale": 1.0,
+          "Frames": 1
+        },
+        "Recipes": [
+          "Staircase",
+          "Explosive Ammo"
+        ],
+        "UnwantedRecipes": null,
+        "IncludeInMisc": false
+      },
+      {
+        "Id": "miscellaneous",
+        "Name": "Miscellaneous",
+        "I18nKey": "category.misc",
+        "UseRules": false,
+        "DynamicRules": null,
+        "Icon": {
+          "Type": "Texture",
+          "Source": "MouseCursors",
+          "Rect": {
+            "X": 50,
+            "Y": 428,
+            "Width": 10,
+            "Height": 10
+          },
+          "Scale": 1.0,
+          "Frames": 1
+        },
+        "Recipes": null,
+        "UnwantedRecipes": null,
+        "IncludeInMisc": false
+      }
+    ],
+    "Applied": null
+  }
+}

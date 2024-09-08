@@ -1,0 +1,10 @@
+{
+    "Name": "StardewMod1",
+    "Author": "Essmann",
+    "Version": "1.0.0",
+    "Description": "Testing out a mod",
+    "UniqueID": "Essmann.StardewMod1",
+    "EntryDll": "StardewMod1.dll",
+    "MinimumApiVersion": "4.0.0",
+    "UpdateKeys": []
+  }
